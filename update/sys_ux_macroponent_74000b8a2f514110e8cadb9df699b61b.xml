@@ -38,7 +38,7 @@
             },
             "src" : {
               "type" : "JSON_LITERAL",
-              "value" : "needit-logo-blue.png"
+              "value" : "needit-logo-green.png"
             },
             "fit" : {
               "type" : "JSON_LITERAL",
@@ -142,7 +142,7 @@
   "isNonDestructive" : false,
   "styles" : {
     "width" : "100%",
-    "background-color" : "#6295A3"
+    "background-color" : "#81B5A1"
   }
 }, {
   "elementId" : "next_needit_row",
@@ -318,7 +318,7 @@
               "clientScript" : null,
               "declarativeAction" : null,
               "event" : {
-                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_74000b8a2f514110e8cadb9df699b61b",
                 "payload" : {
                   "type" : "JSON_LITERAL",
                   "value" : {
@@ -339,7 +339,7 @@
                     "external" : null
                   }
                 },
-                "sysId" : "83cb9a4e2fdd0110e8cadb9df699b64d"
+                "sysId" : "196047ca2f514110e8cadb9df699b671"
               },
               "operation" : null,
               "targetId" : "ckyykhhgpcaaaaaaoddiihhustddrsxbo",
@@ -445,7 +445,7 @@
               "clientScript" : null,
               "declarativeAction" : null,
               "event" : {
-                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_74000b8a2f514110e8cadb9df699b61b",
                 "payload" : {
                   "type" : "MAP_CONTAINER",
                   "container" : {
@@ -511,7 +511,7 @@
                     }
                   }
                 },
-                "sysId" : "83cb9a4e2fdd0110e8cadb9df699b64d"
+                "sysId" : "196047ca2f514110e8cadb9df699b671"
               },
               "operation" : null,
               "targetId" : "ckyykcweeqaaaabbjddiihhujhhddbrabbm",
@@ -600,7 +600,51 @@
               "value" : null
             }
           },
-          "eventMappings" : [ ],
+          "eventMappings" : [ {
+            "eventMappingId" : "ckyyqeeaapqaaaabbqddiiiiffoggaagnjddy",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_uxf_viz_connect.NOW_UXF_VIS_CONNECTED#ITEM_SELECTED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_74000b8a2f514110e8cadb9df699b61b",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "route" : "simple-list",
+                    "fields" : {
+                      "table" : "x_58872_needit_needit"
+                    },
+                    "params" : {
+                      "listTitle" : "NeedIts Needed This Month",
+                      "query" : "active=true^u_when_neededONThis month@javascript:gs.beginningOfThisMonth()@javascript:gs.endOfThisMonth()",
+                      "listView" : "Experience_list"
+                    },
+                    "redirect" : null,
+                    "passiveNavigation" : null,
+                    "title" : null,
+                    "multiInstField" : null,
+                    "targetRoute" : null,
+                    "external" : null
+                  }
+                },
+                "sysId" : "196047ca2f514110e8cadb9df699b671"
+              },
+              "operation" : null,
+              "targetId" : "ckyyqeeaapqaaaabbrddiiiifffnondvwjj",
+              "type" : "EVENT"
+            } ]
+          } ],
           "slot" : "Column 3",
           "definition" : {
             "id" : "67cf18a377c70010cb834a2a6910619a",
@@ -919,6 +963,50 @@
             }
           },
           "eventMappings" : [ {
+            "eventMappingId" : "ckyyqbbddeehhaaaabbiiddiiiiffyjdxruffq",
+            "isConfiguration" : false,
+            "offRowStorageId" : null,
+            "sourceEventApiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#VIEW_ALL_CLICKED",
+            "sourceEventCorrelationId" : null,
+            "sourceEventDefinition" : {
+              "apiName" : "sn_record_list_con.NOW_RECORD_LIST_CONNECTED#VIEW_ALL_CLICKED",
+              "id" : null,
+              "type" : "UXEVENT"
+            },
+            "sourceEventSysId" : null,
+            "targets" : [ {
+              "broker" : null,
+              "clientScript" : null,
+              "declarativeAction" : null,
+              "event" : {
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_74000b8a2f514110e8cadb9df699b61b",
+                "payload" : {
+                  "type" : "JSON_LITERAL",
+                  "value" : {
+                    "route" : "simple-list",
+                    "fields" : {
+                      "table" : "x_58872_needit_needit"
+                    },
+                    "params" : {
+                      "listTitle" : "All Active NeedIts",
+                      "query" : "active=true",
+                      "listView" : "Experience_list"
+                    },
+                    "redirect" : null,
+                    "passiveNavigation" : null,
+                    "title" : null,
+                    "multiInstField" : null,
+                    "targetRoute" : null,
+                    "external" : null
+                  }
+                },
+                "sysId" : "196047ca2f514110e8cadb9df699b671"
+              },
+              "operation" : null,
+              "targetId" : "ckyyqbbddeehhaaaabbjjddiiiiffykdddbbuwi",
+              "type" : "EVENT"
+            } ]
+          }, {
             "eventMappingId" : "ckyyladrggaaaahhjddiihhuyneeqjjkccff",
             "isConfiguration" : false,
             "offRowStorageId" : null,
@@ -994,7 +1082,7 @@
               "clientScript" : null,
               "declarativeAction" : null,
               "event" : {
-                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_223f9e631b46f41068dd5464604bcb2a",
+                "apiName" : "x_58872_needit.NAV_ITEM_SELECTED_RELAY_74000b8a2f514110e8cadb9df699b61b",
                 "payload" : {
                   "type" : "MAP_CONTAINER",
                   "container" : {
@@ -1049,7 +1137,7 @@
                     }
                   }
                 },
-                "sysId" : "83cb9a4e2fdd0110e8cadb9df699b64d"
+                "sysId" : "196047ca2f514110e8cadb9df699b671"
               },
               "operation" : null,
               "targetId" : "ckyykqfhhddaaaagghddiihhuqwbbddvxddaa",
@@ -1113,7 +1201,7 @@
 } ]</composition>
         <da_relay_models/>
         <data>[ ]</data>
-        <dispatched_events>83cb9a4e2fdd0110e8cadb9df699b64d</dispatched_events>
+        <dispatched_events>196047ca2f514110e8cadb9df699b671,83cb9a4e2fdd0110e8cadb9df699b64d</dispatched_events>
         <extends display_value="Page Template">19be392623033300f4b4c50947bf65ba</extends>
         <handled_events/>
         <interactions/>
@@ -1159,15 +1247,15 @@
         <state_properties>[ ]</state_properties>
         <sys_class_name>sys_ux_macroponent</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-08-24 18:11:54</sys_created_on>
-        <sys_id>223f9e631b46f41068dd5464604bcb2a</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_created_on>2022-01-28 18:08:19</sys_created_on>
+        <sys_id>74000b8a2f514110e8cadb9df699b61b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Home</sys_name>
         <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
         <sys_policy/>
         <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
-        <sys_update_name>sys_ux_macroponent_223f9e631b46f41068dd5464604bcb2a</sys_update_name>
+        <sys_update_name>sys_ux_macroponent_74000b8a2f514110e8cadb9df699b61b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2022-01-28 15:58:24</sys_updated_on>
+        <sys_updated_on>2022-01-28 18:14:46</sys_updated_on>
     </sys_ux_macroponent>
 </record_update>
